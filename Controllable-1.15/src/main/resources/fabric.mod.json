@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "fabriccontrollable",
+  "environment": "client",
+  "version": "0.0.1FC-0.8.0C",
+
+  "name": "FabricMC Controllable",
+  "description": "A FabricMC port of MrCrayFish's Controllable mod. By RedCDev(Hared)",
+  "authors": [
+    "MRCrayFish", "RedCDev(Hared)"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fabricmc-contrallable",
+    "sources": "https://github.com/RedCDev/FabricMC-Controllable",
+	"issues": "https://github.com/RedCDev/FabricMC-Controllable/issues"
+  },
+
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "icon": "assets/fabriccontrollable/icon/icon.png",
+  
+  "entrypoints": {
+    "main": [
+      "com.hared.controllable.FabricControllable"
+    ]
+  },
+  "mixins": [
+    "controllable.mixins.json"
+  ],
+  
+   "custom": {
+    "modmenu:clientsideOnly": true
+  },
+
+  "depends": {
+	"minecraft": "1.15"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
